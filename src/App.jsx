@@ -28,7 +28,7 @@ const App = () => {
     };
 
     gapi.load("client:auth2", initClient);
-  });
+  },[]);
 
   const updateSigninStatus = (isSignedIn) => {
     setIsAuthenticated(isSignedIn);
